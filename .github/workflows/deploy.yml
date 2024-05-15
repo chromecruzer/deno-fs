@@ -24,7 +24,7 @@ jobs:
           deno-version: v1.x
 
       - name: Build step
-        run: "deno run --allow-net --allow-write --unstable server.ts"
+        run: "deno run --allow-net --allow-write --unstable main.ts"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
