@@ -34,6 +34,6 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "deno-fs"
-          entrypoint: "main.ts"
+          project: "chromecruze-deno-fs-54"
+          entrypoint: "main.ts --allow-write"
           root: ""
