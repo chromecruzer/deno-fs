@@ -1,0 +1,10 @@
+{
+    "name": "deno-fs",
+    "entrypoint": "server.ts",
+    "permissions": {
+      "net": true,
+      "read": true,
+      "write": true
+    }
+  }
+  
