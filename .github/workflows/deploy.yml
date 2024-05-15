@@ -23,14 +23,6 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Install Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: lts/*
-
-      - name: Install step
-        run: "DENO_KV_ACCESS_TOKEN=ddp_E0DoDlIdTb2EgdxnSavkdcHNJE5EOM1QRB9P"
-
       - name: Build step
         run: "deno  --allow-read --allow-write"
 
