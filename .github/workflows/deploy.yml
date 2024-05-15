@@ -32,7 +32,7 @@ jobs:
         run: "DENO_KV_ACCESS_TOKEN=ddp_E0DoDlIdTb2EgdxnSavkdcHNJE5EOM1QRB9P"
 
       - name: Build step
-        run: "deno --allow-net --allow-read --allow-write"
+        run: "deno  --allow-read --allow-write"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
