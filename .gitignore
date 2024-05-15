@@ -1,0 +1,6 @@
+# Ignore Node nigga
+node_modules
+
+##  ENV
+.env 
+.env.local
