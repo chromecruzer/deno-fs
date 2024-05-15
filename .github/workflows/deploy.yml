@@ -31,9 +31,12 @@ jobs:
       - name: Install step
         run: "DENO_KV_ACCESS_TOKEN=ddp_E0DoDlIdTb2EgdxnSavkdcHNJE5EOM1QRB9P"
 
+      - name: Build step
+        run: "--allow-write"
+
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "chromecruze-deno-fs-54"
-          entrypoint: "main.ts --allow-write"
+          entrypoint: "main.ts "
           root: ""
