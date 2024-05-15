@@ -1,6 +1,6 @@
 {
     "name": "deno-fs",
-    "entrypoint": "server.ts",
+    "entrypoint": "main.ts",
     "permissions": {
       "net": true,
       "read": true,
