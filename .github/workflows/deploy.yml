@@ -23,8 +23,13 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Build step
-        run: "deno run --allow-net --allow-write --unstable main.ts"
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install step
+        run: "DENO_KV_ACCESS_TOKEN=ddp_z3CRRUw0y8wgpkG3APKwY1u8EEIt3x2PmGli"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
